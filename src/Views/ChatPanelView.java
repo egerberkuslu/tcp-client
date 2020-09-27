@@ -33,7 +33,7 @@ public class ChatPanelView extends JPanel{
 		sendMessageButton = new JButton("Mesaj Gönder");
 		conversationBox = new TextArea();
 		messageField = new TextField();
-		messageField.setText("Mesaj İçeriği");
+		messageField.setText("Your Messages Here");
 		clearMessagesButton = new JButton("Mesajlari Temizle");
 		conversationBox.append("Welcome To CENG GANG Chat Room \n");
 		conversationBox.setBackground(Color.black);
@@ -47,10 +47,12 @@ public class ChatPanelView extends JPanel{
 		JPanel othersPanel = new JPanel();
 		othersPanel.setBackground(Color.BLACK);
 		messageField.setPreferredSize( new Dimension( 200, 24 ) );
+		
 		othersPanel.add(messageField);
 		othersPanel.add(sendMessageButton);
 		othersPanel.add(clearMessagesButton);
-		
+		this.setFocusable(true);
+		this.requestFocusInWindow();
 		this.add(messagesPanel);
 		this.add(othersPanel);
 		

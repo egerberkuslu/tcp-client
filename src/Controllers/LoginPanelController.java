@@ -60,12 +60,12 @@ public class LoginPanelController {
 				mainFrame.revalidate();
 				mainFrame.repaint();
 				mainFrame.pack();
-				System.out.println("Logged as " + loginPanelModel.getUserName());
+				//System.out.println("Logged as " + loginPanelModel.getUserName());
 			} catch (UnknownHostException e) {
-				System.out.println("Couldnt' connect to the server!!!");
+				//System.out.println("Couldnt' connect to the server!!!");
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
-				System.out.println("Couldnt' connect to the server!!!");
+				//System.out.println("Couldnt' connect to the server!!!");
 
 			}
 			

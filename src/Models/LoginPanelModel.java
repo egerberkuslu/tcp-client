@@ -1,6 +1,13 @@
 package Models;
 
-public class LoginPanelModel {
+import java.io.Serializable;
+
+public class LoginPanelModel implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -1307322031752981337L;
 	private String userName;
 	private boolean isAnon;
 	
